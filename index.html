@@ -15,8 +15,8 @@
     <!-- start header  -->
     <header>
       <a class="logo" href="#">ahmed elbqarey</a>
-      <i class="fa-solid fa-bars bars">
-        <nav>
+      <i class="fa-solid fa-bars bars" id="bars" onclick="show();">
+        <nav id="nav">
           <a href="#home">home</a>
           <a href="#services">services</a>
           <a href="#projects">my projects</a>
@@ -39,7 +39,7 @@
           <p>hello, my name is "ahmed"</p>
           <h2>frontEnd web developer</h2>
         </div>
-        <img src="images/grid_0 (2).png" alt="" />
+        <img src="images/ahmed.png" alt="" />
         <div class="social-icons">
           <a
             href="https://www.facebook.com/profile.php?id=100008567957168"
@@ -274,11 +274,10 @@
 
     <!-- start contact section  -->
     <section id="contact">
+      <h4>contact me</h4>
       <form action="">
-        <h4>contact me</h4>
         <input type="text" placeholder="Your Full Name" />
-        <input type="text" placeholder="Your Message" />
-        <a href="mailto:amedo56734@gmail.com">send</a>
+        <textarea name="send a message" placeholder="Your Message"></textarea>
       </form>
 
       <div class="social-icons">
@@ -311,5 +310,7 @@
       </div>
     </section>
     <!-- end contact section  -->
+
+    <script src="javascript/main.js"></script>
   </body>
 </html>
