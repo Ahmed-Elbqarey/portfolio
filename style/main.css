@@ -23,6 +23,7 @@ html {
 }
 ::-webkit-scrollbar {
   width: 10px;
+  background-color: var(--id-color);
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
@@ -690,15 +691,15 @@ form a:hover {
   border: 1px solid var(--id-color);
   padding: 5px 10px;
   border-radius: 2px;
-  color: var(--gridiant-color);
+  color: var(--golden-color);
 }
 #up {
   display: none;
 }
 #down:hover,
 #up:hover {
-  background: var(--golden-color);
-  color: var(--dark-gridiant-color);
+  background: var(--id-color);
+  color: var(--golden-color);
 }
 /* ======= end toggle ======= */
 
@@ -722,7 +723,7 @@ nav ul {
 }
 nav ul a {
   font-size: 1.6rem;
-  color: var(--dark-color);
+  color: var(--id-color);
 }
 nav ul span {
   display: block;
