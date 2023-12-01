@@ -2,8 +2,8 @@ let nav = document.getElementById("nav");
 let down = document.getElementById("down");
 let up = document.getElementById("up");
 
+let pallet_colors_show = false;
 function show_pallet_colors() {
-  let pallet_colors_show = false;
   let pallet_colors = document.getElementById("pallet_colors");
 
   pallet_colors_show = !pallet_colors_show;
