@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="hello , my name is ahmed elbqrey iam frontend developoer with high exprince in build web applications and i will happy to work with you" />
     <title>AHMED ELBQAREY</title>
+    <link rel="manifest" href="json/manifest.json" />
     <link rel="icon" href="images/icons/favicon.ico" />
     <link rel="stylesheet" href="style/all.min.css" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
@@ -83,9 +84,7 @@
           </a>
         </div>
 
-
-      <img class="me" src="images/ahmed.webp" alt="" />
-
+        <img class="me" src="images/ahmed.webp" alt="" />
       </section>
 
       <section id="skills">
@@ -223,7 +222,7 @@
           <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img loading="lazy" src="images/quran.webp" style="aspect-ratio: 2.09 / 1 ;" class="d-block w-100" alt="Holy Quran" />
+                <img loading="lazy" src="images/quran.webp" style="aspect-ratio: 2.09 / 1" class="d-block w-100" alt="Holy Quran" />
                 <div class="carousel-caption">
                   <a aria-label="live demo" href="https://ahmed-elbqarey.github.io/quran" target="_blank"
                     >Live Demo
@@ -505,7 +504,7 @@
           <textarea name="message" placeholder="Enter You message"></textarea>
           <a aria-label=""href="https://wa.me/01033892219" target="_blank">send</a>
         </form> -->
-
+        <!-- 
         <div class="form-container">
           <form class="form">
             <div class="form-group">
@@ -544,6 +543,41 @@
 
         <div class="copyright">
           <p>All Right Reserved @ <span>Ahmed Elbqarey</span></p>
+        </div> -->
+        <div class="cols">
+          <div class="col-co">
+            <div class="form-container">
+              <form id="myForm">
+                <div class="input-container">
+                  <input type="text" id="fullName" aria-label="fullName" placeholder="fullName" />
+                  <div class="error" id="fullNameError"></div>
+                </div>
+                <div class="input-container">
+                  <input type="email" id="email" aria-label="email address" placeholder="Email Address" />
+                  <div class="error" id="emailError"></div>
+                </div>
+                <div class="input-container phone-number">
+                  <input type="text" id="phoneNumber" placeholder="Phone Number" pattern="[0-9]+" minlength="11" maxlength="11" />
+                  <div class="error" id="phoneNumberError"></div>
+                </div>
+                <div class="input-container">
+                  <select name="services-list" id="services-select">
+                    <option value="chose servicess">chose servicess</option>
+                    <option value="Web Developer">Web Developer</option>
+                    <option value="UI UX designer">UI UX designer</option>
+                  </select>
+                  <div class="error" id="servicesError"></div>
+                </div>
+                <div class="input-container">
+                  <textarea name="message" id="message-form" cols="30" rows="5" placeholder="Leave your message here"></textarea>
+                  <div class="error" id="messageError"></div>
+                </div>
+                <div class="send-btn">
+                  <input type="submit" value="SEND" class="send-data" onclick="validateForm()" />
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -611,6 +645,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
     <script src="js/circle-progress.js"></script>
+    <script src="js/contactForm.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

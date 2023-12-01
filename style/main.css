@@ -516,7 +516,62 @@ aside span {
   align-items: center;
   flex-direction: column;
 }
-.form-container {
+
+.form-container form {
+  width: 100%;
+  padding: 20px;
+}
+.form-container form .input-container {
+  margin-bottom: 35px;
+}
+.form-container form .input-container input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: transparent;
+  color: var(--golden-color);
+}
+.form-container form .input-container input::placeholder,
+textarea::placeholder {
+  color: var(--second-color);
+}
+.form-container form .input-container select {
+  background-color: transparent;
+  border-bottom: 1px solid #ddd;
+}
+.form-container form .input-container select option {
+  color: var(--main-color);
+}
+.send-btn {
+  text-align: center;
+}
+.send-data {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid var(--golden-color);
+  border-radius: 5px;
+  color: var(--golden-color);
+}
+/* .send-data:hover {
+  color: var(--gold-color);
+  border: 1px solid var(--gold-color);
+} */
+.error {
+  color: red;
+}
+@media (min-width: 991px) {
+  .contactus .cols .col-co {
+    width: 45%;
+  }
+  .contactus .cols {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/* .form-container {
   width: 400px;
   background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
   border: 2px solid transparent;
@@ -615,7 +670,7 @@ aside span {
   background-color: #fff;
   border-color: #fff;
   color: #313131;
-}
+} */
 
 /* form {
   display: flex;
