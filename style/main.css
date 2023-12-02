@@ -209,12 +209,11 @@ aside a span {
   margin-left: 5px;
 } */
 .text img {
-  /* width: 400px;0 */
+  /* width: 400px; */
   display: block;
   margin-bottom: 30px;
-  fill: var(--golden-color);
 }
-.text .contact {
+.text a {
   padding: 15px 20px;
   font-size: 20px;
   color: var(--golden-color);
@@ -521,7 +520,6 @@ aside a span {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 70px;
 }
 
 .form-container form {
@@ -726,7 +724,7 @@ form a:hover {
 /* ======= end contact ======= */
 
 /* ======= start copyright ======= */
-/* .copyright p {
+.copyright p {
   text-align: center;
   font-size: 20px;
   margin: 10px;
@@ -743,7 +741,7 @@ form a:hover {
   margin: 15px 10px;
   transition: 0.7s ease;
   font-size: 30px;
-} */
+}
 /* ======= end copyright ======= */
 
 /* ======= start toggle ======= */
@@ -836,21 +834,15 @@ nav ul span {
   #home .text {
     margin-top: 30px;
   }
-  #home .text a {
-    display: block;
-    margin: auto;
-    width: 60%;
-  }
   #home .text .contact {
     display: none;
   }
   .mh-skills-inner {
     width: 85%;
-    margin: auto;
   }
   .professional-skills {
     width: 80%;
-    margin: 50px auto;
+    margin-top: 50px;
   }
   .professional-skills li {
     margin-left: 10px;
