@@ -544,6 +544,7 @@ textarea::placeholder {
 }
 .form-container form .input-container select option {
   color: var(--main-color);
+  background-color: #111;
 }
 .send-btn {
   text-align: center;
