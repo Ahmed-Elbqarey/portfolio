@@ -1,7 +1,3 @@
-let nav = document.getElementById("nav");
-let down = document.getElementById("down");
-let up = document.getElementById("up");
-
 let pallet_colors_show = false;
 function show_pallet_colors() {
   let pallet_colors = document.getElementById("pallet_colors");
@@ -21,6 +17,9 @@ function change_color(id) {
   }
 }
 
+let nav = document.getElementById("nav");
+let down = document.getElementById("down");
+let up = document.getElementById("up");
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 1000) {
     down.style.display = "none";
