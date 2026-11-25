@@ -821,3 +821,26 @@ nav ul span {
   }
 }
 /* ======= end media ======= */
+
+/* ===== layout fixes ===== */
+#projects .carousel-caption {
+  position: static;
+  padding: 14px 0 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 10px;
+}
+#projects .carousel-caption h3 {
+  font-size: 20px;
+  margin: 0;
+}
+#projects .slider .carousel-control-next,
+#projects .slider .carousel-control-prev {
+  bottom: 90px;
+}
+@media (max-width: 500px) {
+  .text h2 {
+    font-size: 38px;
+  }
+}
