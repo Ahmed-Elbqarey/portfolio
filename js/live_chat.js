@@ -1,3 +1,5 @@
+var Tawk_API = Tawk_API || {};
+Tawk_API.customStyle = { visibility: { mobile: { position: 'br', xOffset: 10, yOffset: 95 } } };
 var Tawk_API = Tawk_API || {},
   Tawk_LoadStart = new Date();
 (function () {
