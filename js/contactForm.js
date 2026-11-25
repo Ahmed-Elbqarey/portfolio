@@ -41,7 +41,8 @@ function validateForm() {
   }
   // If no errors, submit the form
   if (fullName !== "" && email !== "" && phoneNumber !== "" && servicesSelect !== "" && message !== "") {
-    document.getElementById("myForm").submit();
+    var text = "Hello Ahmed, I am " + fullName + " (" + email + ", " + phoneNumber + "). Interested in: " + servicesSelect + ".\n" + message;
+    window.open("https://wa.me/201033892219?text=" + encodeURIComponent(text), "_blank", "noopener");
   }
 }
 function resetErrors() {
